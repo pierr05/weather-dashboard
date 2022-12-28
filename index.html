@@ -12,25 +12,80 @@
         <h1>Weather Dashboard</h1>
     </header>
     <main>
-        <div class="five-day-forecast">
-            <h4>5-Day Forecast:</h4>
+        <div id="forecast">
+            <h4 id="five-day-title"></h4>
         </div>
 <div class="text-input">
             <h3>Search for a City:</h3> 
-            <p><input type="text" placeholder="Miami" id="user-input"></p>        
+            <p><input type="text" placeholder="Miami" id="user-input" class="description"></p>        
 
             <button type="button" id="search-Btn">Search</button>
         </div>
         <div class="cities">
-            <p><button type="button">Atlanta</button></p>
-            <p><button type="button">Denver</button></p>
-            <p><button type="button">Seattle</button></p>
-            <p><button type="button">San Francisco</button></p>
-            <p><button type="button">Orlando</button></p>
-            <p><button type="button">New York</button></p>
-            <p><button type="button">Chicago</button></p>
-            <p><button type="button">Austin</button></p>
-            
+            <p><button type="button" id="Atlanta" class="city-history">Atlanta</button></p>
+            <p><button type="button" id="Denver" class="city-history">Denver</button></p>
+            <p><button type="button" id="Seattle" class="city-history">Seattle</button></p>
+            <p><button type="button" id="San Francisco" class="city-history">San Francisco</button></p>
+            <p><button type="button" id="Orlando" class="city-history">Orlando</button></p>
+            <p><button type="button" id="New York" class="city-history">New York</button></p>
+            <p><button type="button" id="Chicago" class="city-history">Chicago</button></p>
+            <p><button type="button" id="Austin" class="city-history">Austin</button></p>
+        </div>
+        <div id="current-weather-content">
+            <h2 id="current-date" class="current"></h2>
+            <ul>
+                <p>
+                    <li class="content" id="temp-value"></li>
+                </p>
+                <p>
+                    <li class="content" id="wind-value"></li>
+                </p>
+                <p>
+                    <li id="humidity-value"></li>
+                </p>
+            </ul>
+        </div>
+        <div class="five-day-forecast-container">
+            <div id="day1-content">
+                <h2 id="date-1"></h2>
+                <ul>
+                        <li id="day1-temp"></li>
+                        <li id="day1-wind"></li>
+                        <li id="day1-humidity"></li>
+                </ul>
+            </div>
+            <div id="day2-content">
+                <h2 id="date-2"></h2>
+                <ul>
+                        <li class="day2-temp"></li>
+                        <li class="day2-wind"></li>
+                        <li class="day2-humidity"></li>
+                </ul>
+            </div>
+            <div id="day3-content">
+                <h2 id="date-3"></h2>
+                <ul>
+                        <li class="day3-temp"></li>
+                        <li class="day3-wind"></li>
+                        <li class="day3-humidity"></li>
+                </ul>
+            </div>
+            <div id="day4-content">
+                <h2 id="date-4"></h2>
+                <ul>
+                        <li class="day4-temp"></li>
+                        <li class="day4-wind"></li>
+                        <li class="day4-humidity"></li>
+                </ul>
+            </div>
+            <div id="day5-content">
+                <h2 id="date-5"></h2>
+                <ul>
+                        <li class="day5-temp"></li>
+                        <li class="day5-wind"></li>
+                        <li class="day5-humidity"></li>
+                </ul>
+            </div>
         </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
