@@ -1,4 +1,4 @@
-# weather-forecast
+# Weather Dashboard
 
 ## User Story 
 
