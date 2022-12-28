@@ -5,6 +5,7 @@
 }
 body {
     background-color: whitesmoke;
+    position: relative;
 }
 
 header {
@@ -12,17 +13,10 @@ header {
     color: whitesmoke;
     background-color: rgb(61, 61, 150);
     height: 60px;
-    position: absolute;
+    position: relative;
+    
     width: 100%;
     padding-top: 10px;
-}
-
-.five-day-forecast {
-    position: relative;
-    left: 300px;
-    top: 225px;
-    width: 21%;
-    font-size: 24px;
 }
 
 .text-input {
@@ -61,3 +55,62 @@ header {
     background-color: darkgray;
     cursor: pointer;
 }
+
+.container{
+    position: relative;
+    left: 300px;
+    bottom: 407px;
+    border: 0.5px solid black;
+    width: 50%;
+    padding: 70px;
+} 
+
+.current {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+}
+
+.container ul {
+    position: absolute;
+    left: 1%;
+    top: 30%;
+    list-style: none;
+}
+
+.content {
+    padding-bottom: 13px;
+}
+
+
+.day-1, .day-2, .day-3, .day-4, .day-5{
+    position: relative;
+    display: inline-block;
+    left: 300px;
+    bottom: 360px;
+    border: 0.5px solid black;
+    width: 15%;
+    padding: 10px;
+    height: 150px;
+    font-size: 12px;
+    background-color: rgb(48, 48, 86);
+    color: whitesmoke;
+}
+
+.five-day-forecast-container ul {
+    list-style: none;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.five-day-forecast-container ul li {
+    margin-bottom: 12px;
+}
+
+.five-day-forecast {
+    position: relative;
+    left: 300px;
+    top: 230px;
+    width: 21%;
+    font-size: 24px;
+} 
